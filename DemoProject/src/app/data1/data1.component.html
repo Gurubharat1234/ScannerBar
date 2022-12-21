@@ -1,0 +1,20 @@
+<div class="col-md-4 offset-md-4">
+    <form  #LoginForm="ngForm" (ngSubmit)="onSubmit(LoginForm)">
+    <div class="mb-4">
+    <input class="form-control" type="text" placeholder="Enter Id" name ="id" [(ngModel)]="id" >
+</div>
+<div class="mb-4">
+    <input class="form-control" type="text" placeholder="Enter Name" name="Username" [(ngModel)]="Username">
+</div>
+<div class="mb-4">
+    <button type="submit" class="btn btn-success ms-4">Post</button>
+    
+    
+
+
+</div>
+</form>
+<button type="submit" class="btn btn-primary ms-4" (click)="Onpdate()">Update</button>
+<button type="submit" class="btn btn-warning ms-4" (click)="Ondelete()">Delete</button>
+</div>
+<app-data2></app-data2>
